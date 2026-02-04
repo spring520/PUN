@@ -1,0 +1,13 @@
+name: nvf
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - cuda-nvcc
+  - cuda-toolkit
+  - libegl
+  - libffi==3.3
+variables:
+  CUDA_HOME: /remote-home/zzq/.conda/envs/nvf
+  CUDA_INCLUDE_DIRS: /remote-home/zzq/.conda/envs/nvf
+prefix: /remote-home/zzq/.conda/envs/nvf
