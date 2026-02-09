@@ -7,9 +7,9 @@ We release our code and model.
 
 The following datasets are used in our experiments:
 
-- **ShapeNet** (https://shapenet.org)
+- **[ShapeNet](https://shapenet.org)** 
 - **NeRF Synthetic Dataset** (data/assets/blend_files)
-
+- **[Neural Uncertainty Map](https://drive.google.com/drive/folders/1Eki_n8Tk2Y-52_zRSOphTPdJD2ESd8Hl?usp=sharing)** 
 ## Installation
 
 ### Dependencies
@@ -17,7 +17,7 @@ The following datasets are used in our experiments:
 This repository depends on **NVF** and **Nerfstudio**.  
 Please follow the official NVF installation instructions:
 
-1. install nvf (https://github.com/GaTech-RL2/nvf_cvpr24.git)
+1. install [nvf](https://github.com/GaTech-RL2/nvf_cvpr24.git)
 
 2. install other dependency
     pip install -r requirements.txt
@@ -46,6 +46,7 @@ To run NBV inference with a trained model:
 
 ```bash
 python fep_nbv/baseline/our_policy_single.py --vit_ckpt_path vit_small_patch16_224_PSNR_250425172703 --model_3d_path <PATH_TO_ShapeNet>/<category>/<instance index> # some instance example in data/instance_example
+python fep_nbv/baseline/our_policy_single.py --vit_ckpt_path vit_small_patch16_224_PSNR_250425172703 --model_3d_path data/shapenet/instance_example/02691156/1a04e3eab45ca15dd86060f189eb133
 ```
 
 To train a UPNet using NUM dataset
